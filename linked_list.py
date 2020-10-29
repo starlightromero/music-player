@@ -77,3 +77,10 @@ class LinkedList:
             else:
                 cur_node = cur_node.next
         return deleted_node
+
+    def print_list(self):
+        """Print linked list."""
+        current = self.head
+        while current is not None:
+            print(current.data)
+            current = current.next
