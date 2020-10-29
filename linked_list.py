@@ -35,7 +35,6 @@ class LinkedList:
             if cur_node.data == data:
                 return cur_node
             cur_node = cur_node.next
-        return None
 
     def delete(self, data):
         """Delete node with given data."""
