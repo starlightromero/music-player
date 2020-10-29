@@ -4,11 +4,11 @@
 class DoublyNode:
     """Create a doubly node."""
 
-    def __init__(self, data):
+    def __init__(self, data, prev=None, next=None):
         """Initialize Node with data."""
         self.data = data
-        self.next = None
-        self.prev = None
+        self.prev = prev
+        self.next = next
 
     def __repr__(self):
         """Return data and next."""
