@@ -27,19 +27,6 @@ class DoublyLinkedList(LinkedList):
         if self.head is None:
             self.head = new_tail
 
-    # def delete(self, data):
-    #     """Delete node with given data."""
-    #     if self.head is None:
-    #         return None
-    #     while self.head and self.head.data == data:
-    #         self.head = self.head.next
-    #     cur_node = self.head
-    #     while cur_node.next:
-    #         if cur_node.next.data == data:
-    #             cur_node.next = cur_node.next.next
-    #         else:
-    #             cur_node = cur_node.next
-
     def delete_head(self):
         """Delete head of doubly linked list."""
         if self.head is None:
@@ -65,31 +52,3 @@ class DoublyLinkedList(LinkedList):
             self.head = None
             self.tail = None
         return deleted_node
-
-    # def print_list(self):
-    #     """Print linked list."""
-    #     current = self.head
-    #     while current is not None:
-    #         print(current.data)
-    #         current = current.next
-    #
-    # def to_array(self):
-    #     """Return an array from the linked list."""
-    #     arr = []
-    #     cur_node = self.head
-    #     while cur_node:
-    #         arr.append(cur_node.data)
-    #         cur_node = cur_node.next
-    #     return arr
-    #
-    # def reverse(self):
-    #     """Reverse linked list."""
-    #     if self.head is None or self.tail is None:
-    #         return None
-    #     arr = self.to_array().reverse()
-    #     new_ll = LinkedList()
-    #     index = 0
-    #     while index < len(arr):
-    #         new_ll.append(arr[index])
-    #         index += 1
-    #     return new_ll
