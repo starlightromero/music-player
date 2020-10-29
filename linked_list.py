@@ -27,3 +27,15 @@ class LinkedList:
         self.tail = new_tail
         if self.head is None:
             self.head = new_tail
+
+    def delete_head(self):
+        """Delete head of linked list."""
+        if self.head is None:
+            return None
+        deleted_node = self.head
+        if self.head.next:
+            self.head = self.head.next
+        else:
+            self.head = None
+            self.tail = None
+        return deleted_node
