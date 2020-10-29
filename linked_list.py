@@ -96,7 +96,8 @@ class LinkedList:
         """Reverse linked list."""
         if self.head is None or self.tail is None:
             return None
-        arr = self.to_array().reverse()
+        arr = self.to_array()
+        arr.reverse()
         new_ll = LinkedList()
         index = 0
         while index < len(arr):
