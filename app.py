@@ -68,4 +68,57 @@ print(reverse_ll.print_list())
 print("")
 
 
-#                           DOUBLY LINKED LIST
+#                               DOUBLY LINKED LIST
+
+
+# Create doubly linked list
+doubly = DoublyLinkedList()
+
+# Append each song in data to doubly linked list
+for song in data:
+    doubly.append(song)
+
+# Print doubly linked list
+print("DOUBLY LINKED LIST")
+doubly.print_list()
+print("")
+
+# Prepend "Superfly" and print doubly linked list
+print("PREPEND SUPERFLY")
+doubly.prepend("Superfly")
+doubly.print_list()
+print("")
+
+# Find "Jungle Boogie" and print node
+print("FIND JUNGLE BOOGIE")
+print(doubly.find("Jungle Boogie"))
+print("")
+
+# Delete "Jungle Boogie" and print doubly linked list
+print("DELETE JUNGLE BOOGIE")
+doubly.delete("Jungle Boogie")
+doubly.print_list()
+print("")
+
+# Delete head and print doubly linked list
+print("DELETE HEAD")
+doubly.delete_head()
+doubly.print_list()
+print("")
+
+# Delete tail and print doubly linked list
+print("DELETE TAIL")
+doubly.delete_tail()
+doubly.print_list()
+print("")
+
+# Covert doubly linked list to list
+print("TO ARRAY")
+print(doubly.to_array())
+print("")
+
+# Reverse doubly linked list
+print("REVERSE DOUBLY LINKED LIST")
+reverse_doubly = doubly.reverse()
+print(reverse_doubly.print_list())
+print("")
