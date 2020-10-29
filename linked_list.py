@@ -28,6 +28,19 @@ class LinkedList:
         if self.head is None:
             self.head = new_tail
 
+    def delete(self, data):
+        """Delete node with given data."""
+        if self.head is None:
+            return None
+        while self.head and self.head.data == data:
+            self.head = self.head.next
+        cur_node = self.head
+        while cur_node.next:
+            if cur_node.next.data == data:
+                cur_node.next = cur_node.next.next
+            else:
+                cur_node = cur_node.next
+
     def delete_head(self):
         """Delete head of linked list."""
         if self.head is None:
