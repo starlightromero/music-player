@@ -11,8 +11,8 @@ class Node:
 
     def __repr__(self):
         """Return data and next."""
-        return f"Node('{self.data}', '{self.next}')"
+        return f"Node(Song: '{self.data}', Next: '{self.next}')"
 
     def __str__(self):
         """Return data and next."""
-        return f"Node('{self.data}', '{self.next}')"
+        return f"Node(Song: '{self.data}', Next: '{self.next}')"
