@@ -104,3 +104,4 @@ class LinkedList:
         while index < len(arr):
             new_ll.append(arr[index])
             index += 1
+        return new_ll
