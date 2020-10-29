@@ -4,15 +4,15 @@
 class Node:
     """Create a node."""
 
-    def __init__(self, data, next=None):
+    def __init__(self, data, next_node=None):
         """Initialize Node with data."""
         self.data = data
-        self.next = next
+        self.next = next_node
 
     def __repr__(self):
         """Return data and next."""
-        return f"Node(Song: '{self.data}', Next: '{self.next}')"
+        return f"Node(Song: '{self.data}')"
 
     def __str__(self):
         """Return data and next."""
-        return f"Node(Song: '{self.data}', Next: '{self.next}')"
+        return f"Node(Song: '{self.data}')"
