@@ -39,3 +39,17 @@ class LinkedList:
             self.head = None
             self.tail = None
         return deleted_node
+
+    def delete_tail(self):
+        """Delete tail of linked list."""
+        if self.tail is None:
+            return None
+        deleted_node = self.tail
+        cur_node = self.head
+        while cur_node.next:
+            if cur_node.next == self.tail:
+                cur_node.next = None
+                self.tail = cur_node
+            else:
+                cur_node = cur_node.next
+        return deleted_node
