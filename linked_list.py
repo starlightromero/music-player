@@ -17,3 +17,13 @@ class LinkedList:
         self.head = new_head
         if self.tail is None:
             self.tail = new_head
+
+    def append(self, data):
+        """Append data to linked list."""
+        new_tail = Node(data)
+        new_tail.next = None
+        if self.tail:
+            self.tail.next = new_tail
+        self.tail = new_tail
+        if self.head is None:
+            self.head = new_tail
