@@ -12,8 +12,7 @@ class LinkedList:
 
     def prepend(self, data):
         """Prepend data to linked list."""
-        new_head = Node(data)
-        new_head.next = self.head
+        new_head = Node(data, self.head)
         self.head = new_head
         if self.tail is None:
             self.tail = new_head
@@ -21,7 +20,6 @@ class LinkedList:
     def append(self, data):
         """Append data to linked list."""
         new_tail = Node(data)
-        new_tail.next = None
         if self.tail:
             self.tail.next = new_tail
         self.tail = new_tail
