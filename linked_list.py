@@ -28,6 +28,17 @@ class LinkedList:
         if self.head is None:
             self.head = new_tail
 
+    def find(self, data):
+        """Find a node with the given data."""
+        if self.head is None:
+            return None
+        cur_node = self.head
+        while cur_node:
+            if cur_node.data == data:
+                return cur_node
+            cur_node = cur_node.next
+        return None
+
     def delete(self, data):
         """Delete node with given data."""
         if self.head is None:
