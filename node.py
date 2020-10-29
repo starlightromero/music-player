@@ -4,10 +4,10 @@
 class Node:
     """Create a node."""
 
-    def __init__(self, data):
+    def __init__(self, data, next=None):
         """Initialize Node with data."""
         self.data = data
-        self.next = None
+        self.next = next
 
     def __repr__(self):
         """Return data and next."""
